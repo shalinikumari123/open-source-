@@ -1,0 +1,20 @@
+open source project 
+topic-Idea sharing platform 
+
+I want to make a platform where users can add there ideas regarding there start up or any project.
+Anyone even without logging can see the ideas.
+A admin  will be there to verify the idea and admin has access to delete or accept the idea request.
+
+Functions-
+Access to anyone
+Log in
+Sign up
+add ideas(only after log in or sign up)
+see ideas 
+
+for Admin
+Sign up
+add ideas(only after log in or sign up)
+see ideas 
+Delete ideas 
+Accept ideas
