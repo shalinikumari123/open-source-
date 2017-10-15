@@ -1,0 +1,18 @@
+                                                             website layout
+In this revision i created the website layout using HTML ,CSS and Bootstrap.
+i created the main page (Website name-Zeal) login page and sign-in page
+
+Main page consist of--
+A navigation bar which includes the home ideas contribution job post ,find a job ,about,login and sign up
+A brief description of what is this website and what this provides
+
+Sign-up page
+A page where a new user can register itself
+User has to give its name email address and to create a password using which user can visit the page again
+Name,email,password are the required information and has to be field by the new user
+
+Log in page 
+A page where a already registered user can acess the page.
+Existing user should give it user name and password.
+
+In this revision i also added to post and find a job.
