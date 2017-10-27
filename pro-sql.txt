@@ -1,0 +1,36 @@
+in this revision i implemented sql and php in my website of idea sharing website.
+I created 2 tables one for storing the data of user and another for storing the 
+ideas provided by them and connected them by foreign key.so I implemented login 
+and sign in fully working state using sql and php.I also implemented the sessions
+using php.
+I also provided admin rights to select the ideas which will be shown on the page 
+eg to create session code 
+<?php
+ session_start();
+?>
+eg code for showing the ideas using php
+<?php
+		  mysql_connect("localhost","learn_php","shalini@123");
+			mysql_select_db("login");
+			$res=mysql_query("select post,sno,username,email from post where status=2");?>
+			
+			<?php
+			        $c=1;
+					 echo"<br>";
+					while($row=mysql_fetch_assoc($res)){
+                        echo $c;
+						 echo ".";
+						 echo"IDEA";
+						 echo"<br>";
+						 echo $row['post'];
+						 echo"<br>";
+						 echo"USERNAME--";
+						 echo $row['username'];
+						  echo"<br>";
+						  echo "EMAIL-ID--";
+						 echo $row['email'];
+						  echo"<br>";
+						 echo"<br>";
+						 echo"<br>";
+						 $c++;
+					}?>
