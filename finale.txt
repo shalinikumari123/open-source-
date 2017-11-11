@@ -1,0 +1,39 @@
+I completed my project i included the search bar to search ideas.
+code
+  <?php
+                  $conn=mysqli_connect("localhost","learn_php","shalini@123","newproject");
+                        if(isset($_POST['search_button'])){
+                                $search_key=$_POST['search'];
+                                $sql="select post,sno,username,email from post where status=2 AND post LIKE '%$search_key%'";
+                        }
+                        else
+                           {
+                                        $sql="select post ,sno,username,email from post where status=2";
+                            }
+                        $res=mysqli_query($conn,$sql);?>
+                        
+                        <?php
+                                $c=1;
+                                         echo"<br>";
+                                        while($row=mysqli_fetch_assoc($res)){
+                        echo $c;
+                                                 echo ".";
+                                                 echo"IDEA";
+                                                 echo"<br>";
+                                                 echo $row['post'];
+                                                 echo"<br>";
+                                                 echo"USERNAME--";
+                                                 echo $row['username'];
+                                                  echo"<br>";
+                                                  echo "EMAIL-ID--";
+                                                 echo $row['email'];
+                                                  echo"<br>";
+                                                 echo"<br>";
+                                                 echo"<br>";
+                                                 $c++;
+                                        }?>
+                                        </div>
+                                        </div>
+                                        </div>
+i learnt a lot from this project small mistakes that we do and how to correct them correct ussage of php functions 
+
